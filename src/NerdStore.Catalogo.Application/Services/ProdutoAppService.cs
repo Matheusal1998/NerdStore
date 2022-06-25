@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using NerdStore.Catalogo.Application.ViewModels;
 using NerdStore.Catalogo.Domain;
 using NerdStore.Core.DomainObjects;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace NerdStore.Catalogo.Application.Services
 {
-    public class ProdutoAppService
+    public class ProdutoAppService : IProdutoAppService
     {
         private readonly IProdutoRepository _produtoRepository;
         private readonly IEstoqueService _estoqueService;
